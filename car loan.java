@@ -2,7 +2,7 @@
 public class CarLoan {
 	public static void main(String[] args) {
 
-	int carLoan = 10000;
+  int carLoan = 10000;
   int loanLength = 3;
   int interestRate = 5;
   int dowmPayment = 2000;
@@ -18,9 +18,9 @@ public class CarLoan {
   {
     int remainingBalance =carLoan - dowmPayment;
     int months = loanLength*12;
-    //montly payment without interest
     int montlyBalance = remainingBalance / months;
     int interest = (montlyBalance*interestRate)/100;
+    //montly payment with interest
     int montlyPayment = montlyBalance + interest;
     System.out.println(montlyPayment);
 
